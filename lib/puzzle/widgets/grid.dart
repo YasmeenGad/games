@@ -23,8 +23,8 @@ class Grid extends StatelessWidget {
               itemBuilder: (context, index) {
                 return numbers[index] != 0
                     ? GridButton("${numbers[index]}", () {
-                  clickGrid(index);
-                })
+                        clickGrid(index);
+                      })
                     : SizedBox.shrink();
               }),
         ));

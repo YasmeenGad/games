@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:games/widgets/reset_button.dart';
-import 'package:games/widgets/time.dart';
+import 'package:games/puzzle/widgets/reset_button.dart';
+import 'package:games/puzzle/widgets/time.dart';
 
 import 'move.dart';
 

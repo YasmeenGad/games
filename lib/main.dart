@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:games/screens/home.dart';
-import 'package:games/screens/puzzle_game.dart';
+import 'package:games/home.dart';
+import 'package:games/puzzle/screens/puzzle_game.dart';
+import 'package:games/quiz/exam.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
           routes: {
             Home.routeName: (context) => Home(),
             PuzzleGame.routeName: (context) => PuzzleGame(),
+            Quiz.routeName: (context) => Quiz(),
           },
         );
       },

@@ -2,9 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:games/widgets/grid.dart';
-import 'package:games/widgets/menu.dart';
-import 'package:games/widgets/mytitle.dart';
+
+import '../widgets/grid.dart';
+import '../widgets/menu.dart';
+import '../widgets/mytitle.dart';
 
 class PuzzleGame extends StatefulWidget {
   const PuzzleGame({Key? key}) : super(key: key);
@@ -30,9 +31,7 @@ class _PuzzleGameState extends State<PuzzleGame> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery
-        .of(context)
-        .size;
+    final size = MediaQuery.of(context).size;
     if (timer == null) {
       timer = Timer.periodic(duration, (t) {
         startTime();
